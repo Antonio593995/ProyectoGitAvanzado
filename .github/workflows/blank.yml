@@ -14,7 +14,7 @@ jobs:
           LOCAL_PROD_TOKEN: ${{  secrets.LOCAL_PROD_TOKEN  }}
         shell: powershell
         run:
-          if ($env:DEV_TOKEN - eq $env:LOCAL_PROD_TOKEN) {
+          if ($env:DEV_TOKEN -eq $env:LOCAL_PROD_TOKEN) {
             write-host "Los secrets coinciden"
           }
           else {
