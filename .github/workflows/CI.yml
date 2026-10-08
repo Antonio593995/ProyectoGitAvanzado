@@ -42,7 +42,8 @@ jobs:
         run: |
           if ($env:TOKEN -eq $env:LOCAL_DEV_TOKEN) {
             Write-Host "CI: validación de desarrollo correcta ✅"
-          } else {
+          } 
+          else {
             Write-Host "CI: validación fallida ❌"
             exit 1
           }
