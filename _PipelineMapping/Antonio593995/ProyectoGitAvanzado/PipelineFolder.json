@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "Antonio593995/ProyectoGitAvanzado",
+  "pipelineDirectory": "ProyectoGitAvanzado",
+  "workspaceDirectory": "ProyectoGitAvanzado\\ProyectoGitAvanzado",
+  "repositories": {
+    "Antonio593995/ProyectoGitAvanzado": {
+      "repositoryPath": "ProyectoGitAvanzado\\ProyectoGitAvanzado",
+      "lastRunOn": "10/08/2026 18:06:13 +02:00"
+    }
+  },
+  "lastRunOn": "10/08/2026 18:17:24 +02:00"
+}
