@@ -3,9 +3,9 @@ name: CI
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    branches: [develop]
+    branches: [develope]
   push:
-    branches: [develop]
+    branches: [develope]
   workflow_dispatch: {}
 
 permissions:
