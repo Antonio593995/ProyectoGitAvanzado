@@ -1,5 +1,6 @@
 name: CD
 
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -47,9 +48,9 @@ jobs:
           TOKEN: ${{ secrets.PROD_TOKEN }}
         run: |
           if ($env:TOKEN -eq $env:LOCAL_PROD_TOKEN) {
-            Write-Host "CD: validación de producción correcta ✅ — listo para desplegar"
-          } 
+            Write-Host "CD: validación de producción correcta"
+            } 
           else {
-            Write-Host "CD: validación fallida ❌"
+            Write-Host "CD: validación fallida"
             exit 1
-          }
+            }

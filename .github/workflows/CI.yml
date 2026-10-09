@@ -4,9 +4,9 @@ name: CI
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    branches: [develop]
+    branches: [develope]
   push:
-    branches: [develop]
+    branches: [develope]
   workflow_dispatch: {}
 
 permissions:
@@ -42,9 +42,9 @@ jobs:
           TOKEN: ${{ secrets.DEV_TOKEN }}
         run: |
           if ($env:TOKEN -eq $env:LOCAL_DEV_TOKEN) {
-            Write-Host "CI: validación de desarrollo correcta ✅"
+          Write-Host "CI: validación de desarrollo correcta"
           } 
           else {
-            Write-Host "CI: validación fallida ❌"
-            exit 1
+          Write-Host "CI: validación fallida"
+          exit 1
           }
